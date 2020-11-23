@@ -1,0 +1,56 @@
+@charset "utf-8";
+.all-box{
+    width: 1221px;
+    height: 450px;
+    border: 1px solid red;
+    margin: 0 auto;
+}
+
+.box-shop{
+   width: 50%;
+   height: 326px;
+   margin: 0 auto;
+}
+
+.box-shop tr th{
+    width: 238px;
+    height: 36px;
+    background-color:red;
+
+}
+
+.box-shop tr td{
+    text-align: center;
+}
+
+
+.box-th1{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "黑体";
+    color:#ffffff;
+    background-color: hotpink;
+}
+
+
+.box-th3{
+   height: 10px; 
+}
+
+.box-th3 td{
+    font-size: 14px;
+    color: #9688a5;
+    padding-top: 5px;
+}
+/* 
+.all-box thead{
+    background-color: violet;
+    text-align: center;
+    vertical-align: middle;
+    height: 20px;
+} */
+
+tfoot img{
+    width: 100%;
+}
