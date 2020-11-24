@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+     <!--指定页面编码格式-->
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <!--指定页头信息-->
+    <title>Document</title>
+</head>
+
+<style>
+
+    /* 
+    解决方法1：
+            如果我们在pre里放置的文本过长，中间也没有换行，由于pre会保持文本的格式，导致文本溢出。
+            给pre标签定义横向滚动条
+
+            .pre-1{
+                    overflow: auto;
+                  }      
+    解决方法2：使用text-wrapping
+
+            .pre-1{
+                     white-space:pre-wrap;
+                 }
+
+     */
+/* .pre-1{
+    overflow: auto;
+} */
+
+                .pre-1{
+                     white-space:pre-wrap;
+                 }
+
+
+</style>
+
+<body>
+
+    <!--表示文章标题-->
+    <h1 align="left">A:汪汪！你想找的页面让我吃喽！</h1>
+    <!--绘制可爱小狗的字符号-->
+    <pre align="left">
+        .----.
+        _.'__    `.
+        .--($)($$)---/#\
+        .' @          /###\
+        :         ,   #####
+        `-..__.-' _.-\###/
+        `;_:    `"'
+        .'"""""`.
+        /,  hi ,\\
+        //  你好!  \\
+        `-._______.-'
+        ___`. | .'___
+        (______|______)
+    </pre>
+
+    <hr>
+
+
+    <!--表示文章标题-->
+    <h1 align="left">B:当pre元素来展示源代码的时候最好的方式是用code元素来包裹代码</h1>
+    <pre align="left">
+      <code>
+          body{
+            
+            background:#fff;
+            
+            font: 12px/24px 1.66;
+        }
+      </code>
+    </pre>
+
+    <hr>
+
+      <!--表示文章标题-->
+      <h1 align="left">C:嵌套html其它标签,最好不要包含可以导致段落断开的标签（如:p,标题）</h1>
+      <pre>
+        [ti:凡人歌]
+        [ar:李宗盛]
+        [al:凡人歌]
+        [00:00](music)
+        [00:28]你我皆凡人，生在人世间；
+        [00:35]终日奔波苦，一刻不得闲；
+        [00:43]既然不是仙，难免有杂念；
+        [00:50]<a href="#">道义放两旁</a>利字摆中间。
+      </pre>
+
+      <hr>
+
+      <!--表示文章标题-->
+      <h1 align="left">D:文本过长时，溢出</h1>
+      
+      <div  style="width:500px; background:red; padding:20px;">
+        <pre class="pre-1">[ti:凡人歌][ar:李宗盛][al:凡人歌][00:00](music)[00:28]你我皆凡人，生在人世间；[00:35]终日奔波苦，一刻不得闲；[00:43]既然不是仙，难免有杂念；[00:50]<a href="#">道义放两旁</a>，利字摆中间。</pre>
+      </div>
+
+
+      
+      <!-- 符号实体：https://www.w3school.com.cn/html/html_entities.asp -->
+      <hr>
+      <h1 align="left">E:渲染html元素:html元素会在pre标签中直接被解析。如果我们想显示这些标签，只要把这些特殊符号转换为符号实体，就可以了。如： "<" 代表 "<"，">" 代表 ">"。</h1>
+        <pre><code>
+        &lt;ul class=&quot;main-list&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;藏新线才是最西藏的进、出线&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;藏新线才是最西藏的进、出线&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;藏新线才是最西藏的进、出线&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;</code></pre>
+      
+    
+</body>
+
+</html>
+
+<!-- 
+  标签：pre
+  可定义预格式化的文本。
+  在pre元素中的文本会保留空格和换行符。
+  文本显现为等宽字体。
+  可以用pre来标识代码。
+
+  https://www.cnblogs.com/lcspring/p/10596033.html
+ -->
