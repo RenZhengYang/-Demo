@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Document</title>
+
+ <style>
+   ol,ul{list-style: none;}
+   a{color: #555555; text-decoration: none;} 
+   #mr_title{width: 880px;height: 40px;line-height: 40px;background-color: #f9f9f9;display: block;}
+   #mr_txt{float: left; margin: 11px 30px 0 15px;padding-left: 10px;border-left: 6px solid #1cb177;font: 700 16px/18px verdana; color: #555;}   
+   .mr_sort{float: left;height: 16px; line-height: 16px;margin-top: 13px;}
+
+   .list_wrap{
+    clear: both;
+        width: 880px;
+        height: 260px;
+        background: #ffffff no-repeat 0 0;
+   }
+    
+    .mr_list li {
+        float: left;
+        _display: inline;
+        position: relative;
+        width: 400px;
+        height: 126px;
+        border: 1px solid #f0f0f0;
+    }
+
+    .mr_list li .picTxt{
+        width: 428px;
+        height: 126px;
+    }
+
+    .mr_list .pic{
+        float: left;
+        width: 90px;
+        height: 128px;
+        margin: 15px;
+        overflow: hidden;
+    }
+
+    .mr_list li.lst1{
+        border-width: 0 1px 1px 0;
+    }
+
+    .mr_list li.lst2 {
+        width: 429px;
+        border-width: 0 0 1px 0;
+    }
+
+    .mr_list .c_name a {
+        color: #555;
+        line-height: 22px;
+    }
+     .mr_list .c_detail {
+        margin: 10px 0 12px;
+        color: #999;
+    }
+
+    .free {
+        font-size: 14px;
+        color: #29b079;
+        font-family: 'Helvetica Neue', 'Helvetica', 'Arial', '\5FAE\8F6F\96C5\9ED1', 'Microsoft YaHei';
+    }
+
+
+ </style>
+
+</head>
+<body>
+
+    <section style="margin-bottom: 20px; color: #555555;background-color: aquamarine;">
+
+     <!-- 顶部 -->
+     <div id="mr_title">
+      <span id="mr_txt">IT/互联网/技能</span>
+      <div class="mr_sort">
+       <a href="#">编程</a>&nbsp;&nbsp;
+       <a href="#">设计</a>&nbsp;&nbsp;
+       <a href="#">移动开发</a>
+      </div>
+     </div>
+     <!-- 内容部分 -->
+     <div class="list_wrap">
+      <ul class="mr_list">
+          <li class="lst1">
+           
+           <div class="picTxt">
+           <!-- 左边图片 -->
+           <div class="pic">
+                <a href="#"><img src="./images/1.png" width="85%" alt="s"></a>
+           </div>
+           <!-- 右边内容 -->
+           <div class="c_right">
+               <div class="c_name"><a href="#">如何系统地自学 android？</a></div>
+               <div class="c_detail">
+                  <span class="les_counts mr25"><i class="c_1ab177">3</i>课时</span> 
+                  <span class="stu_counts"><i class="c_1ab177">1.6万</i>次学习</span>
+               </div>
+               <span class="free">免费</span>
+
+           </div>
+          
+
+
+           </div>
+
+          </li>
+
+          <li class="lst2">
+            <div class="picTxt">
+                <div class="pic">
+                    <a href="#">
+                        <img src="images/2.png" width="85%">
+                    </a>
+                </div>
+                <div class="c_right">
+                    <div class="c_name">
+                        <a href="#">
+                            手把手教你学习HTML5									</a>
+                    </div>
+                    <div class="c_detail">
+                        <span class="les_counts mr25"><i class="c_1ab177">36</i>课时</span>
+                        <span class="stu_counts"><i class="c_1ab177">5.8万</i>次学习</span>
+                    </div>
+                    <span class="free">免费</span>
+                </div>
+            </div>
+        </li>
+        <li class="lst1">
+            <div class="picTxt">
+                <div class="pic">
+                    <a href="#">
+                        <img src="./images/3.png" width="85%">
+                    </a>
+                </div>
+                <div class="c_right">
+                    <div class="c_name">
+                        <a href="#">
+                            Java 两小时超音速入门									</a>
+                    </div>
+                    <div class="c_detail">
+                        <span class="les_counts mr25"><i class="c_1ab177">3</i>课时</span>
+                        <span class="stu_counts"><i class="c_1ab177">2.8万</i>次学习</span>
+                    </div>
+                    <span class="free">免费</span>
+                </div>
+            </div>
+        </li>
+        <li class="lst2">
+            <div class="picTxt">
+                <div class="pic">
+                    <a href="#">
+                        <img src="./images/4.png" width="85%">
+                    </a>
+                </div>
+                <div class="c_right">
+                    <div class="c_name">
+                        <a href="#">
+                            Python 从入门到精通									</a>
+                    </div>
+                    <div class="c_detail">
+                        <span class="les_counts mr25"><i class="c_1ab177">45</i>课时</span>
+                        <span class="stu_counts"><i class="c_1ab177">8.9万</i>次学习</span>
+                    </div>
+                    <span class="free">免费</span>
+                </div>
+            </div>
+        </li>
+
+
+
+      </ul>
+
+
+
+     </div>
+
+
+
+
+    </section>
+    
+</body>
+</html>
+
+
+<!-- 
+section:         文档中的区段，解释了 PRC：
+float:           属性定义元素在哪个方向浮动。以往这个属性总应用于图像，使文本围绕在图像周围，不过在 CSS 中，任何元素都可以浮动。浮动元素会生成一个块级框，而不论它本身是何种元素。
+font:            normal 12px/24px "宋体"、baiverdana、lucida、arial: 解释为: 字体不加粗 字体大小为12px 行高为24px 显示du字体为宋体,如果没有宋zhi体,就显示verdana,如果没有verdana那就显示lucida ...............后面同样原理
+text-decoration: 这个 CSS 属性是用于设置文本的修饰线外观的（下划线、上划线、贯穿线/删除线  或 闪烁）它是 text-decoration-line, text-decoration-color, text-decoration-style, 和新出现的 text-decoration-thickness 属性的缩写。
+ -->
