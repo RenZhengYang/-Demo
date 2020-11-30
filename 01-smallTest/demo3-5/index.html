@@ -1,57 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>表单标签</title>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>主题背景</title>
+
+
+<style>
+
+        .mr_bg {
+            width: 100%;
+            height: 383px;
+            background: url(./images/bg.jpg) center top no-repeat;
+            padding-top: 117px;
+        }
+        .mr-logo {
+            width: 392px;
+            height: 64px;
+            margin: 0 auto;
+            background: url(./images/logo.png) no-repeat;
+        }
+        .mr_des{
+            width: 850px;
+            margin: 30px auto;
+            font-size: 20px;
+            line-height: 32px;
+            color: #fff;
+            text-align: center;
+        }
+        .mr_view {
+            width: 220px;
+            height: 44px;
+            display: block;
+            color: #fff;
+            font-size: 20px;
+            line-height: 44px;
+            text-indent: 26px;
+            border-radius: 2px;
+            margin: 20px auto;
+            background: #278dc7 url(./images/3.png) 185px -91px no-repeat;
+        }
+
+
+</style>
+
 </head>
 <body>
 
-    <!-- action 提交到哪 -->
-    <form action="http://www.baidu.com">  
-        <h2>输入框：</h2>
-        <input type="text" placeholder="请输入用户名">
-        <h2>密码框：</h2>
-        <input type="password" placeholder="请输入密码">
-        <h2>复选框：</h2>
-        <input type="checkbox" checked>苹果
-        <input type="checkbox" checked>香蕉
-        <input type="checkbox" disabled>葡萄
-        <h2>单选框</h2>
-        <input type="radio" name="gender">男
-        <input type="radio" name="gender">女
-        <h2>上传文件</h2>
-        <input type="file">
-        <h2>提交按钮和重置按钮</h2>
-        <input type="submit">
-        <input type="reset">
-    </form>
+    <div class="mr_bg">
+        <div class="mr-logo"></div>
+        <p class="mr_des">跟随一线资深工程师、设计师，以及行业知名专家学习，<br>
+            系统地掌握工作方法和技巧，获得全新的职业提升！</p>
+         <a href="#"  class="mr_view">查看所有课程</a>
+    </div>
     
 </body>
 </html>
-
-
-
-
-<!-- 
-from:表单最外层容器
-input:标签用于搜索用户信息，根据不同的type值，展示不同的控件如出入框、密码框、复选框
-
-（input）type属性 单标签
-text:=========普通文本输入框
-password：====密码输入框
-checkbox:=====复选框
-radio：=======单选框
-file:=========上传文件
-submit:=======提交按钮
-reset:========重置按钮
- -->
-
- <!-- 
-     
-    checked   默认选中 
-    disabled  禁止选中
-
-
-
--->
